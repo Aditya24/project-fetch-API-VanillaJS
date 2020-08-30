@@ -4,14 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Fetch API</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <h1>Project Fetch API</h1>
-    <button id="fetch-text">Fetch Text</button>
-    <button id="fetch-employee">Fetch JSON</button>
-    <button id="fetch-comments">Fetch API Comments</button>
-    <hr />
-    <div id="text-output"></div>
+    <div class="container">
+      <h1 class="display-4 mb-4">Project Fetch API</h1>
+      <div class="d-flex">
+        <button id="fetch-text" class="btn btn-primary mr-4">
+          Fetch Text
+        </button>
+        <button id="fetch-employee" class="btn btn-success mr-4">
+          Fetch JSON
+        </button>
+        <button id="fetch-comments" class="btn btn-warning mr-4">
+          Fetch API Comments
+        </button>
+      </div>
+      <hr />
+      <div id="text-output"></div>
+      <!--Making the POST request-->
+      <div class="form-group">
+        <form id="addComments">
+          <div>
+            <input
+              type="text"
+              id="name"
+              class="form-control"
+              placeholder="Name"
+            />
+          </div>
+          <div>
+            <textarea
+              id="body"
+              placeholder="Body"
+              class="form-control"
+            ></textarea>
+          </div>
+          <input type="submit" value="submit" class="btn btn-secondary" />
+        </form>
+      </div>
+    </div>
   </body>
   <script type="text/javascript" src="./app.js"></script>
 </html>
