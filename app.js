@@ -1,6 +1,7 @@
 // Selecting the DOM
 const textBtn = document.querySelector("#fetch-text");
 const text = "text.txt";
+const textOutput = document.querySelector("#text-output");
 //Adding Event Listener
 textBtn.addEventListener("click", fetchText);
 
@@ -20,5 +21,8 @@ function fetchText() {
 
   fetch("text.txt")
     .then((res) => res.text())
-    .then((data) => console.log(data));
+    .then((data) => {
+      //Inserting the data into the DOM
+      textOutput.innerHTML = data;
+    });
 }

@@ -1,6 +1,6 @@
 # project-fetch-API-VanillaJS
 
-Project fro learning how to fetch API and display on the DOM. The project is to give basic understanding of fetching the data from local files from the project as well as from API's. There are there parts of the project.
+Project for learning how to fetch an API and display on the DOM. The project is to give basic understanding of fetching the data from local files from the project as well as from API's. There are there parts of the project.
 
 ## 1. Fetching Data from Text File
 
