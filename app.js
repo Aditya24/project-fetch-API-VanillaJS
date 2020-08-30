@@ -24,5 +24,7 @@ function fetchText() {
     .then((data) => {
       //Inserting the data into the DOM
       textOutput.innerHTML = data;
-    });
+    })
+    //catching errors from promises
+    .catch((err) => console.log(err));
 }
